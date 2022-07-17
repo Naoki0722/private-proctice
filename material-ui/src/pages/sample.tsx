@@ -1,11 +1,17 @@
-import { Button } from '@mui/material'
+import { Button, css } from '@mui/material'
 import { NextPage } from 'next'
+
+const buttonStyle = css({
+  fontSize: 100,
+})
 
 const sample: NextPage = () => {
   return (
     <>
       <h1>サンプルページ</h1>
-      <Button variant='contained'>ボタン</Button>
+      <Button variant='contained' css={buttonStyle}>
+        ボタン
+      </Button>
     </>
   )
 }
